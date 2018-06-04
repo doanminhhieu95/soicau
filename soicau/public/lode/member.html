@@ -1,0 +1,1048 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+
+<head>
+
+    <title>Thông tin thành viên</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Thông tin thành viên" />
+    <meta name="description" content="Thông tin thành viên" />
+    <meta name="keywords" content="Thông tin thành viên" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="https://www.lode88.net/public/site/css/css.css" type="text/css" />
+
+    <script type="text/javascript">
+        var site_url = 'https://www.lode88.net/';
+        var base_url = 'https://www.lode88.net/';
+        var public_url = 'https://www.lode88.net/public';
+    </script>
+    <link rel="icon" href="https://www.lode88.net/public/site/layout/images/icon.png" type="https://www.lode88.net/public/site/layout/image/vnd.microsoft.icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700&subset=vietnamese'
+        rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,300,300italic&subset=vietnamese' rel='stylesheet'
+        type='text/css' />
+    <link href="https://www.lode88.net/public/min/begin.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://www.lode88.net/public/min/begin.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".slide_show").colorbox({
+                rel: 'slide_show',
+                slideshow: true
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function time() {
+            var today = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Chủ nhật";
+            weekday[1] = "Thứ 2";
+            weekday[2] = "Thứ 3";
+            weekday[3] = "Thứ 4";
+            weekday[4] = "Thứ 5";
+            weekday[5] = "Thứ 6";
+            weekday[6] = "Thứ 7";
+            var day = weekday[today.getDay()];
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            nowTime = h + ":" + m + ":" + s;
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            today = day + ', ' + dd + '/' + mm + '/' + yyyy;
+
+            tmp = today + ' | ' + nowTime;
+
+            document.getElementById("time_view").innerHTML = tmp;
+
+            clocktime = setTimeout("time()", "1000", "JavaScript");
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".datepicker").datetimepicker({
+                scrollMonth: false,
+                scrollInput: false,
+                lang: "vi",
+                format: 'd-m-Y',
+                timepicker: false,
+                changeYear: true,
+                changeMonth: true,
+                yearStart: '2018',
+                yearEnd: '2019',
+                maxDate: new Date()
+            });
+            $(".datepicker1").datetimepicker({
+                scrollMonth: false,
+                scrollInput: false,
+                lang: "vi",
+                format: 'd-m-Y',
+                timepicker: false,
+                changeYear: true,
+                changeMonth: true,
+                yearStart: '2018',
+                yearEnd: '2019',
+                minDate: new Date()
+            });
+            $(".datepicker2").datetimepicker({
+                scrollMonth: false,
+                scrollInput: false,
+                lang: "vi",
+                format: 'd-m-Y',
+                timepicker: false,
+                yearStart: '1930',
+                yearEnd: '2010',
+                maxDate: new Date()
+            });
+            //tao dong ho
+            time();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="https://www.lode88.net/">
+                    <img src="https://www.lode88.net/public/site/layout/images/logo.png">
+                </a>
+            </div>
+            <div class="login" id="form_logined" style="width:500px">
+                <div style="text-align: right;" class="user-logined">
+                    <span>Chào bạn:
+                        <b>
+                            <a href="https://www.lode88.net/memberinfo.html" style="color: #d70a0a; text-decoration: underline;"
+                                id="form_username">doanminhhieu95</a>
+                        </b>
+                    </span>
+                    -
+                    <a href="https://www.lode88.net/member.html">Tài khoản</a>
+                </div>
+                <div class="txt-link reset-pwd">
+
+                    <a href="https://www.lode88.net/logout.html">Đăng Xuất</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="menu">
+                <ul>
+                    <li class="mn-home ">
+                        <a href="https://www.lode88.net/">&nbsp;</a>
+                    </li>
+                    <li id="menu_taikhoan" class="active">
+                        <a href="https://www.lode88.net/member.html">Tài Khoản</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.lode88.net/lo-de-mien-bac.html">Lô đề Miền Bắc</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.lode88.net/lo-de-mien-trung.html">Lô đề Miền Trung</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.lode88.net/lo-de-mien-nam.html">Lô đề Miền Nam</a>
+                    </li>
+                </ul>
+                <div class="bank" id="btn-bank-info-show">
+                    <span class="icon-bank"></span>
+                    <span class="bank-txt">Tài khoản ngân hàng</span>
+                </div>
+                <div class="info-bank" style="display: none;">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(document).click(function () {
+                        $(".info-bank").hide();
+
+                    });
+                    $("#btn-bank-info-show").click(function (event) {
+                        $(".info-bank").show();
+                        event.stopPropagation();
+                    });
+                });
+            </script>
+        </div>
+        <div class="notification">
+            <div class="notification-head">
+                <span class="notification-icon"></span>
+            </div>
+            <div class="notification-text">
+                <marquee behavior="scroll" direction="left">
+                    <span id="div_thongbao">Cam kết an toàn trên mỗi giao dịch với ghi chú buôn bán tiền ảo hợp pháp</span>
+                </marquee>
+            </div>
+            <div class="date-time">
+                <span id="time_view"></span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="main page-lode">
+            <div class="taikhoan">
+                <div class="account-header clearfix ">
+                    <div id="infoUser" class="pull-left">
+                        <div class="title-block ">
+                            <h4 class="title">
+                                <i class="iconUser"></i>Thông tin tài khoản:</h4>
+                            <a class="edit-info" href="https://www.lode88.net/memberinfoedit.html">
+                                <i class="iconEdit"></i>chỉnh sửa</a>
+                        </div>
+                        <div class="meta">
+                            <p>Email:
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="05616a646b686c6b6d6d6c60703c30456268646c692b666a68">[email&#160;protected]</a>
+                            </p>
+                            <p>Số điện thoại: 09699*****</p>
+                        </div>
+                    </div>
+                    <div id="user-balance" class="pull-right">
+                        <strong>
+                            <i class="iconBalance"></i>Số tiền hiện có:</strong>
+                        <span class="number-balance">0 K</span>
+                    </div>
+                </div>
+                <div class="lich-su-danh gd">
+                    <div class="bhead">
+                        <div class="fl">
+                            Lịch sử đánh đề</div>
+                    </div>
+
+                    <div class="bcontent" id="ls-danh-loto">
+                    </div>
+                    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $.ajax({
+                                url: 'https://www.lode88.net/loto_order/showlist.html',
+                                //                                    dataType:"json",
+                                method: "GET",
+                                cache: false,
+                                data: "",
+                                success: function (data) {
+                                    $("#ls-danh-loto").html(data);
+
+                                }
+                            });
+                        });
+                    </script>
+                    <style>
+                        .pg-normal.lastopen {
+                            display: none;
+                        }
+
+                        span.pg-normal a {
+                            color: #000;
+                            margin: 0 4px;
+                        }
+                    </style>
+                </div>
+
+                <div class="lich-su-danh gd">
+                    <div class="bhead">
+                        <div class="fl">
+                            Lịch sử giao dịch</div>
+                    </div>
+                    <div class="bcontent" id="ls-danh-tran">
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $.ajax({
+                                url: 'https://www.lode88.net/tran/showlist.html',
+                                //                                    dataType:"json",
+                                method: "GET",
+                                cache: false,
+                                data: "",
+                                success: function (data) {
+                                    $("#ls-danh-tran").html(data);
+
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="giao-dich">
+                    <div class="deposit-container clearfix">
+                        <div class="fl block-gd nap-tien">
+                            <form action="https://www.lode88.net/smartpay/new_invoice.html" id="frm-smartpay-deposit-make" class="">
+                                <div class="title block-title">NẠP TIỀN siêu tốc
+                                    <i class="iconNews"></i>
+                                </div>
+                                <div class="tb-deposit-quick">
+                                    <table style="width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <a href="http://smartpay.click/" target="_blank">
+                                                        <img src="https://www.lode88.net/public/site/images/banner-smartpay-new-1.jpg"
+                                                            width="100%" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 135px;">
+                                                    Chọn ngân hàng (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <select name="bank" class="form-control">
+                                                        <option></option>
+                                                        <option value="vcb">Ngân hàng Vietcombank </option>
+                                                        <option value="eab">Ngân hàng DongA </option>
+                                                        <option value="acb">Ngân hàng ACB </option>
+                                                        <option value="vtb">Ngân hàng VietinBank </option>
+                                                        <option value="bidv">Ngân hàng Đầu Tư &amp; Phát triển Việt Nam (BIDV) </option>
+                                                        <option value="sab">Ngân hàng Sacombank </option>
+                                                        <option value="tcb">Ngân hàng Techcombank </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Số tiền (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="amount" class="form-control format_currency" id="from_overview_smartpay_naptien_tien">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                    <input class="btn btn-signin pull-right" id="btn-deposite-quick" type="submit" value="Nạp tiền">
+                                                    <input type="hidden" value="2" name="_submit" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="warning-notification">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <img src="https://www.lode88.net/public/site/images/Icon_Service_Full.png"
+                                                        width="100" height="100" />
+                                                </td>
+                                                <td valign="middle" style="padding-left:20px;">Hệ thống Smartpay đang tạm ngưng trong ít phút</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <style>
+                                    .tb-deposit-quick {
+                                        position: relative;
+                                    }
+
+                                    .warning-notification {
+                                        display: none;
+                                        visibility: hidden;
+                                    }
+
+                                    .maintenance-service .warning-notification {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        border: 1px solid #797979;
+                                        z-index: 9;
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                        background-color: #797979;
+                                        background-color: rgba(121, 121, 121, 0.8);
+                                        color: #fff;
+                                        font-size: 20px;
+                                        display: block;
+                                        visibility: visible;
+                                    }
+                                </style>
+                            </form>
+                        </div>
+                        <div class="pull-right block-gd nap-tien">
+                            <form action="" id="frm-deposit-make">
+                                <div class="title block-title">
+                                    Nạp tiền thủ công</div>
+                                <div>
+                                    <table style="width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 135px;">
+                                                    Chọn ngân hàng (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <select name="bank" id="from_overview_naptien_bank" class="form-control">
+                                                        <option></option>
+                                                        <option value="VCB">Ngân hàng Vietcombank</option>
+                                                        <option value="DongA">Ngân hàng DongA</option>
+                                                        <option value="ACB">Ngân hàng ACB</option>
+                                                        <option value="VietinBank">Ngân hàng VietinBank</option>
+                                                        <option value="BIDV">Ngân hàng Đầu Tư &amp; Phát triển Việt Nam (BIDV)</option>
+                                                        <option value="Sacombank">Ngân hàng Sacombank</option>
+                                                        <option value="Techcombank">Ngân hàng Techcombank</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Chọn Tk nhận (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <div id="bank_account_loading_deposite" style="display:none;">
+                                                        <img src="https://www.lode88.net/public/img/loader.gif" />
+                                                    </div>
+                                                    <select id="from_overview_naptien_account" name="bank_number" class="form-control">
+                                                    </select>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Tên người gửi (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <input id="from_overview_naptien_customer" name="sender" type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Số tiền (
+                                                    <font color="red">
+                                                        <b>*</b>
+                                                    </font>)
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="amount" class="form-control format_currency" id="from_overview_naptien_tien">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Mã giao dịch
+                                                </td>
+                                                <td>
+                                                    <input name="user_bank_content" id="from_overview_naptien_magiaodich" type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                    <input class="btn btn-signin" id="btn-form-submit-deposite" type="submit" value="Nạp tiền" />
+                                                    <input type="hidden" value="2" name="_submit" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="withdraw clearfix">
+                        <form id="frm-withdraw-make">
+                            <div class="title block-title">
+                                Rút tiền</div>
+                            <div class="block-gd pull-left">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 135px;">
+                                                Chọn ngân hàng (
+                                                <font color="red">
+                                                    <b>*</b>
+                                                </font>)
+                                            </td>
+                                            <td>
+                                                <select name="bank" id="from_overview_ruttien_bank" class="form-control">
+                                                    <option></option>
+                                                    <option value="VCB">Ngân hàng Vietcombank</option>
+                                                    <option value="DongA">Ngân hàng DongA</option>
+                                                    <option value="ACB">Ngân hàng ACB</option>
+                                                    <option value="VietinBank">Ngân hàng VietinBank</option>
+                                                    <option value="BIDV">Ngân hàng Đầu Tư &amp; Phát triển Việt Nam (BIDV)</option>
+                                                    <option value="Sacombank">Ngân hàng Sacombank</option>
+                                                    <option value="Techcombank">Ngân hàng Techcombank</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Tên người nhận (
+                                                <font color="red">
+                                                    <b>*</b>
+                                                </font>)
+                                            </td>
+                                            <td>
+                                                <input name="bank_account" id="from_overview_ruttien_customer" type="text" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Số tài khoản (
+                                                <font color="red">
+                                                    <b>*</b>
+                                                </font>)
+                                            </td>
+                                            <td>
+                                                <input name="bank_numbers" id="from_overview_ruttien_accountnumber" type="text" onkeyup="numberonly(this)" class="form-control">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="block-gd pull-right">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Số tiền (
+                                                <font color="red">
+                                                    <b>*</b>
+                                                </font>)
+                                            </td>
+                                            <td>
+                                                <input name="amount" id="from_overview_ruttien_tien" type="text" class="form-control format_currency">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Nhập mã (
+                                                <font color="red">
+                                                    <b>*</b>
+                                                </font>)
+                                            </td>
+                                            <td>
+                                                <input name="security_code" autocomplete="off" id="from_overview_ruttien_sdt" type="text" class="form-control" placeholder="Nhập 5 số cuối của số điện thoại.">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                <input id="btn-form-submit-withdraw" type="submit" class="btn btn-signin pull-right" value="Rút tiền">
+                                                <input type="hidden" value="2" name="_submit">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="footer_icon" href="https://www.lode88.net/thong-tin/tu-gioi-thieu/i1.html" title="Trách nhiệm">
+                <i class="icon-gioithieu"></i>
+                <p>
+                    Tự giới thiệu
+                </p>
+            </a>
+            <a class="footer_icon" href="https://www.lode88.net/thong-tin/trach-nhiem/i2.html" title="Trách nhiệm">
+                <i class="icon-trachnhiem"></i>
+                <p>
+                    Trách nhiệm
+                </p>
+            </a>
+            <div class="footer_icon">
+                <a href="https://www.lode88.net/tro-giup.html" title="Trợ giúp">
+                    <i class="icon-trogiup"></i>
+                    <p>Trợ giúp</p>
+                </a>
+            </div>
+            <div class="footer_icon" onclick="Dialog.show('#contact');">
+                <i class="icon-lienhe"></i>
+                <p>Liên hệ</p>
+            </div>
+            <div id="contact" style="display: none; ">
+                <div class="dialog" style="width:600px;">
+                    <div class="dialog-title">
+                        Liên hệ</div>
+                    <div class="close b-close">
+                        ×</div>
+                    <div class="dialog-content">
+                        <div class="contact contact-phone">
+                            <span>
+                                <a style="color:#fff;" href="tel:0979498888" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);">0979.49.8888</a>
+                            </span>
+                        </div>
+
+                        <div class="contact contact-zalo">
+                            <span>
+                                <a href="http://secure.livechatinc.com/licence/6335071/open_chat.cgi" class="popup2">Live Chat</a>
+                            </span>
+                        </div>
+
+                        <div class="contact contact-skype">
+                            <span>
+                                <a style="color:#fff;" href="skype:lode88.com?chat">lode88.com</a>
+                            </span>
+                        </div>
+                        <div class="contact contact-viber">
+                            <span>0979.49.8888</span>
+                        </div>
+                        <div class="contact contact-mail">
+                            <span>
+                                <a style="color:#fff;font-size:11px;" href="/cdn-cgi/l/email-protection#a3cfccc7c69b9b8dc0cccee3c4cec2cacf8dc0ccce">
+                                    <span class="__cf_email__" data-cfemail="2a46454e4f1212044945476a4d474b434604494547">[email&#160;protected]</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="contact contact-wechat">
+                            <span>0979.49.8888</span>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_icon ft-contact" style="width: 210px;">
+                <div style="margin-top: 32px;">
+                    <a href="http://secure.livechatinc.com/licence/6335071/open_chat.cgi" class="popup2">
+                        <img src="https://www.lode88.net/public/site/layout/images/logo_livechat.png" />
+                    </a>
+
+                    <a href="viber://0979498888">
+                        <img src="https://www.lode88.net/public/site/layout/images/icon_viber.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="hotline">
+                <a style="color:#fff;" href="tel:0979498888" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);">0979.49.8888</a>
+            </div>
+            <div class="support"></div>
+        </div>
+        <div style="text-align:center;color:#354b60;font-size:10px;height:12px;">
+            <p>
+                Lô đề online - Đánh đề trực tuyến - Đánh lô số đề trên mạng - Chơi lô đề - Soi cầu lô đề miền bắc - Tỷ lệ lô đề - Hướng dẫn
+                - Dự đoán kết quả lô đề - Thống kê kết quả lô đề -
+                <u>
+                    <strong>
+                        <a href="https://www.lode88.net/kinh-nghiem.html">Kinh nghiệm đánh lô đề, số đề</a>
+                    </strong>
+                </u>
+                <br />
+            </p>
+        </div>
+        <div id="divAdRight" style="display: block; position: fixed; top: 20px;">
+            <a href="#">
+                <img src="https://www.lode88.net/public/site/layout/images/banner_phai.png" width="170" />
+            </a>
+        </div>
+        <div id="divAdLeft" style="display: block; position: fixed; top: 20px;">
+            <a href="#">
+                <img src="https://www.lode88.net/public/site/layout/images/banner_trai.png" width="170" />
+            </a>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+        <script>
+            function FloatTopDiv() {
+                startLX = ((document.body.clientWidth - MainContentW) / 2) - LeftBannerW - LeftAdjust, startLY =
+                    TopAdjust + 80;
+                startRX = ((document.body.clientWidth - MainContentW) / 2) + MainContentW + RightAdjust, startRY =
+                    TopAdjust + 80;
+                var d = document;
+
+                function ml(id) {
+                    var el = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                    el.sP = function (x, y) {
+                        this.style.left = x + 'px';
+                        this.style.top = y + 'px';
+                    };
+                    el.x = startRX;
+                    el.y = startRY;
+                    return el;
+                }
+
+                function m2(id) {
+                    var e2 = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                    e2.sP = function (x, y) {
+                        this.style.left = x + 'px';
+                        this.style.top = y + 'px';
+                    };
+                    e2.x = startLX;
+                    e2.y = startLY;
+                    return e2;
+                }
+                window.stayTopLeft = function () {
+                    if (document.documentElement && document.documentElement.scrollTop)
+                        var pY = document.documentElement;
+                    else if (document.body)
+                        var pY = document.body;
+                    if (document.body.scrollTop > 30) {
+                        startLY = 3;
+                        startRY = 3;
+                    } else {
+                        startLY = TopAdjust;
+                        startRY = TopAdjust;
+                    };
+                    ftlObj.y += (pY + startRY - ftlObj.y) / 16;
+                    ftlObj.sP(ftlObj.x, ftlObj.y);
+                    ftlObj2.y += (pY + startLY - ftlObj2.y) / 16;
+                    ftlObj2.sP(ftlObj2.x, ftlObj2.y);
+                    setTimeout("stayTopLeft()", 1);
+                }
+                ftlObj = ml("divAdRight");
+                //stayTopLeft();
+                ftlObj2 = m2("divAdLeft");
+                stayTopLeft();
+            }
+
+            function ShowAdDiv() {
+                var objAdDivRight = document.getElementById("divAdRight");
+                var objAdDivLeft = document.getElementById("divAdLeft");
+                if (document.body.clientWidth < 1000) {
+                    objAdDivRight.style.display = "none";
+                    objAdDivLeft.style.display = "none";
+                } else {
+                    objAdDivRight.style.display = "block";
+                    objAdDivLeft.style.display = "block";
+                    FloatTopDiv();
+                }
+            }
+        </script>
+        <script>
+            document.write(
+                "<script type='text/javascript' language='javascript'>MainContentW = 980;LeftBannerW = 170;RightBannerW = 170;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 10;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>"
+            );
+        </script>
+        <script type="text/javascript">
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents: function () {
+                    var obj = this;
+
+                    obj.dd.on('click', function (event) {
+                        $(this).toggleClass('active', '', 100);
+                        return false;
+                    });
+
+                    obj.opts.on('click', function () {
+                        var opt = $(this);
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                    });
+                },
+                getValue: function () {
+                    return this.val;
+                },
+                getIndex: function () {
+                    return this.index;
+                }
+            }
+
+            $(function () {
+
+                var dd = new DropDown($('#dd'));
+                var dd = new DropDown($('#dd1'));
+                var dd = new DropDown($('#dd2'));
+                var dd = new DropDown($('#dd3'));
+
+                $(document).click(function () {
+                    // all dropdowns
+                    $('.wrapper-dropdown-3').removeClass('active');
+                });
+
+            });
+
+
+            $('.banner-slider').bxSlider({
+                pager: false,
+                mode: 'fade',
+                pause: 5000,
+                auto: true,
+                nextSelector: '#slider-next',
+                prevSelector: '#slider-prev',
+                nextText: '',
+                prevText: '',
+                controls: false
+            });
+
+            //
+            //                
+            //                $(".bank").click(function (event) {
+            //                    showBankInfo();
+            //                    event.stopPropagation();
+            //                });
+        </script>
+        <script type="text/javascript">
+            var __lc = {};
+            __lc.license = 6335071;
+
+            (function () {
+                var lc = document.createElement('script');
+                lc.type = 'text/javascript';
+                lc.async = true;
+                lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                    'cdn.livechatinc.com/tracking.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(lc, s);
+            })();
+        </script>
+        <script type="text/javascript">
+            //initialize the 3 popup css class names - create more if needed
+            var matchClass = ['popup1', 'popup2', 'popup3'];
+            //Set your 3 basic sizes and other options for the class names above - create more if needed
+            var popup1 =
+                'width=400,height=300,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+            var popup2 =
+                'width=800,height=600,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+            var popup3 =
+                'width=1000,height=750,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+
+            //When the link is clicked, this event handler function is triggered which creates the pop-up windows 
+            function eventHandler() {
+                var x = 0;
+                var popupSpecs;
+                //figure out what popup size, etc to apply to the click
+                while (x < matchClass.length) {
+                    if ((" " + this.className + " ").indexOf(" " + matchClass[x] + " ") > -1) {
+                        popupSpecs = matchClass[x];
+                        var popurl = this.href;
+                    }
+                    x++;
+                }
+                //Create a "unique" name for the window using a random number
+                var popupName = Math.floor(Math.random() * 10000001);
+                //Opens the pop-up window according to the specified specs
+                newwindow = window.open(popurl, popupName, eval(popupSpecs));
+                return false;
+            }
+
+            //Attach the onclick event to all your links that have the specified CSS class names
+            function attachPopup() {
+                var linkElems = document.getElementsByTagName('a'),
+                    i;
+                for (i in linkElems) {
+                    var x = 0;
+                    while (x < matchClass.length) {
+                        if ((" " + linkElems[i].className + " ").indexOf(" " + matchClass[x] + " ") > -1) {
+                            linkElems[i].onclick = eventHandler;
+                        }
+                        x++;
+                    }
+                }
+            }
+
+            function enterLogin(evt) {
+                if (evt.keyCode == 13) {
+                    login();
+                }
+            }
+
+            //Call the function when the page loads
+            window.onload = function () {
+                attachPopup();
+            }
+        </script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-66148450-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script src="https://www.lode88.net/public/site/layout/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            _atrk_opts = {
+                atrk_acct: "gKoEo1IWx810T3",
+                domain: "lode88.net",
+                dynamic: true
+            };
+            (function () {
+                var as = document.createElement('script');
+                as.type = 'text/javascript';
+                as.async = true;
+                as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(as, s);
+            })();
+        </script>
+        <noscript>
+            <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=gKoEo1IWx810T3" style="display:none" height="1" width="1"
+                alt="" />
+        </noscript>
+
+    </div>
+</body>
+<script>
+    $("#frm-smartpay-deposit-make").submit(function () {
+        var amount = parseInt($("#from_overview_smartpay_naptien_tien").val().replace(new RegExp(",", 'g'), ""));
+        if (isNaN(amount) || amount < 50000) {
+            alert("Số tiền tối thiếu 50,000VNĐ");
+            return false;
+        }
+        return true;
+    });
+    $("#frm-withdraw-make").submit(function () { //alert("");return false;
+        var data = $(this).serialize();
+        $("#btn-form-submit-withdraw").attr("disabled", "disabled");
+        $.ajax({
+            url: "https://www.lode88.net/tran/withdraw.html",
+            dataType: "json",
+            method: "POST",
+            data: data,
+            success: function (jdata) {
+                if (!jdata.complete) {
+                    var error_string = "Lỗi tạo phiếu rút:\n";
+                    for (var k in jdata) {
+                        if (jdata[k].length > 0)
+                            error_string += $(jdata[k]).text() + "\n";
+                    }
+                    alert(error_string + "\nVui lòng thử lại");
+                } else {
+                    //                                    Dialog.close("#dangky");
+                    alert("Phiếu rút đã tạo thành công");
+                    //                                    window.location.reload();
+                    $("#frm-withdraw-make").trigger('reset');
+                }
+                $("#btn-form-submit-withdraw").removeAttr("disabled");
+            },
+            error: function () {
+                alert("Lỗi không thể gửi được dữ liệu, vui lòng f5 và thử lại");
+                $("#btn-form-submit-withdraw").removeAttr("disabled");
+            }
+        });
+        return false;
+    });
+
+
+
+    $("#frm-deposit-make").submit(function () { //alert("");return false;
+        var data = $(this).serialize();
+        $("#btn-form-submit-deposite").attr("disabled", "disabled");
+        $.ajax({
+            url: "https://www.lode88.net/tran/deposit_hand.html",
+            dataType: "json",
+            method: "POST",
+            data: data,
+            success: function (jdata) {
+                if (!jdata.complete) {
+                    var error_string = "Lỗi tạo phiếu nạp:\n";
+                    for (var k in jdata) {
+                        if (jdata[k].length > 0)
+                            error_string += $(jdata[k]).text() + "\n";
+                    }
+                    alert(error_string + "\nVui lòng thử lại");
+                } else {
+                    //                                    Dialog.close("#dangky");
+                    alert("Phiếu nạp đã tạo thành công");
+                    //                                    window.location.reload();
+                    $("#frm-deposit-make").trigger('reset');
+                }
+                $("#btn-form-submit-deposite").removeAttr("disabled");
+            },
+            error: function () {
+                alert("Lỗi không thể gửi được dữ liệu, vui lòng f5 và thử lại");
+                $("#btn-form-submit-deposite").removeAttr("disabled");
+            }
+        });
+        return false;
+    });
+
+    jQuery(document.body).on('change', '#from_overview_naptien_bank', function () {
+        $("#bank_account_loading_deposite").show();
+        $("#from_overview_naptien_account").hide();
+        $("#btn-form-submit-deposite").attr("disabled", "disabled");
+        $.ajax({
+            url: "https://www.lode88.net/tran/get_bankinfo/" + this.value,
+            dataType: "json",
+            success: function (result) {
+                $("#from_overview_naptien_account").children().remove();
+                for (var k in result) {
+                    $("#from_overview_naptien_account").append('<option value="' + k + '" >' +
+                        result[k] + '</option>');
+                    //                                        console.log('<option value="'+k+'" >'+result[k]+'</option>');
+                    $("#btn-form-submit-deposite").removeAttr("disabled");
+                }
+                $("#bank_account_loading_deposite").hide();
+                $("#from_overview_naptien_account").show();
+            },
+            error: function () {
+                $("#bank_account_loading_deposite").hide();
+                $("#from_overview_naptien_account").show();
+                alert("Có lỗi khi xảy ra với sự cố mạng, vui lòng f5 và thử lại");
+            }
+        });
+
+    });
+
+    function numberonly(field) {
+        var strk = $(field).val(),
+            stmp = "",
+            s = 0,
+            f = "";
+        if (strk.length > 0)
+            for (i = s; i < strk.length; i++) {
+
+                if (!isNaN(strk.substr(i, 1)))
+                    stmp = stmp + strk.substr(i, 1);
+
+            }
+
+
+        field.value = stmp;
+
+    }
+</script>
+
+</html>

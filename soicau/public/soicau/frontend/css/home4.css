@@ -1,0 +1,611 @@
+.div_submit{
+    margin-top: 10px;
+}
+.a_check{
+    color:red !important;
+}
+.span_error{
+    color:red;
+}
+.p_title{
+    color: #CC5544;
+}
+.td_active{
+    background-color: rgb(51, 126, 191);
+}
+
+/* alert */
+div#popup_container {
+    border: 1px solid #CCCDDF;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    min-width: 340px !important;
+    text-align: center;
+    background: #fff;
+    box-shadow:  1px 1px 1px 1px;
+}
+h1#popup_title {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1px;
+}
+div#popup_content {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-dd{
+    width:80px;
+    height: 80px;
+    border:1px solid #dedede;
+}
+.error_alert {
+    color: #f70000;
+    /* background-color: #f2dede !important; */
+    /* border-color: #ebccd1; */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#site section h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #00a651;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text_dangky a {
+    font-size: 25px;
+    font-family: Myfont1;
+    font-weight: bold;
+    color: #c60;
+}
+.div-t{
+    margin:20px 0px;
+}
+.col_sea{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#site #chot-so .chot-so-section h4 a{
+    text-decoration: none !important;
+}
+#site #chot-so .chot-so-section h4 {
+    margin: 0 20px;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #efa400;
+}
+
+/*QUANG CAO */
+.hideQCAlign {
+    text-align: right;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+.hideQCAlign a {
+    background: #01AEF0;
+    padding: 2px 4px;
+    color: #FFF;
+    padding-bottom: 3px;
+}
+
+#hide_float_right {
+    text-align: right;
+    font-size: 11px;
+}
+#hide_float_right a {
+    background: #01AEF0;
+    padding: 2px 4px;
+    color: #FFF;
+}
+#banner{position: relative;}
+.divbanner img{
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.divbanner{
+    position: absolute;
+    height:35px;
+    width: 350px;
+    right: 0px;
+    top: 8px;
+}
+.li_menu_des{
+    display: inline-block;
+}
+.li_menu_mobi{
+    display: none !important;
+}
+.sub-menu {
+    z-index: 9;
+}
+@media screen and (max-width: 320px) {
+    .user-info{
+        height:50px;
+    }
+    .avt-loto{
+        padding-left: 0px;
+    }
+    #site #header ul#menu li {
+        padding: 15px 7px 15px 7px !important;
+    }
+    .title strong {
+        font-size: 26px;
+    }
+    .li_menu_des{
+        display: none !important;
+    }
+    .li_menu_mobi{
+        display: inline-block  !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .divbs {
+        width: 50% !important;
+    }
+    .divbanner{
+        width: 100%!important;
+
+        top: 70px;
+
+    }
+    .div_dd_sau{margin-top:20px;}
+    .div_show_mb{display: block !important;}
+    .div_show_desk{display: none !important;}
+    .divsu{margin: auto;display: table;}
+    #site #header #banner {
+        background-image: url("../bg-banner2.png") left no-repeat !important;
+
+
+    }
+
+}
+.note{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.div_note{margin-bottom: 15px;}
+#float_content_right_zone3 img{
+    margin-top:5px !important;
+}
+@media screen and (max-width: 800px) {
+    #float_content_right_zone2 .zone img{
+        height:auto !important;
+    }
+    .divbanner{
+        width: 300px;
+    }
+    #site #header #banner {
+        background:#FCF0B6 url("../bg-banner2.png") left no-repeat  !important;
+
+    }
+    .div_note{margin-bottom: 0px;}
+}
+.div_show_desk{display: block;}
+.div_show_mb{display: none;}
+.list2 img{
+    width: auto !important;
+}
+.list2 {
+    padding: 8px;
+    background-color: #fff;
+    border-bottom: 1px solid #ECECEC;
+    text-align: left;
+}
+#float_content_right_zone2 .zone img{
+    height:90px;
+}
+.zone{
+    font-size: 12pt;display:true; margin: 5px;padding: 0px;border-radius: 0px;
+    z-index: 999;
+}
+.zone1 p{
+    margin-bottom:0px !important;
+}
+.zone1{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 0px;
+    border-top:1px solid #ECECEC;
+    z-index: 999;
+}
+.divtb2{
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+}
+.zone1 img{
+    width: auto !important;
+
+}
+.list2_chu{
+    border: none !important;
+}
+
+.alert {
+    padding: 15px !important;
+}
+.divleft{
+    width:55px !important;
+}
+.chot-so-section img{
+    width:55px !important;
+    height:55px;
+}
+.avt{
+    width:50px !important;
+}
+.avt_chat{
+    width:45px !important;
+    height:45px;
+}
+.divright p{
+    margin-left:20px !important;
+    width: 100%;
+    overflow: auto;
+}
+.divright{
+    padding-left:5px !important;
+    overflow: hidden;
+}
+.chot-so-section p{
+    font-size: 16px !important;
+}
+.post-content,#chat,.textarea_comment,.name h4,#message{
+    font-size: 17px !important;
+}
+.div_avt_tv{
+    text-align:center;
+}
+.check{
+    display: none;
+}
+
+/*QUAY THU*/
+.title-c2 {
+    background: #f0ad4e;
+    padding: 10px 5px;
+    font-size: 22px;
+    color:#000;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.one-city .colgiai td:last-child {
+    border-right: none;
+}
+.one-city .colgiai td {
+    padding: 6px 5px;
+    border-left: none;
+}
+.one-city .colgiai td, .one-city .titgiai, .txt-giai {
+    border-right: 1px solid #e4e4e4;
+}
+.colgiai td {
+    border-left: 1px solid #e4e4e4;
+    padding: 3px 5px;
+}
+.colgiai td, .colgiai tr th {
+    border-bottom: 1px solid #e4e4e4;
+}
+.colgiai td, .search, .title, .title-r {
+    text-align: center;
+}
+.quaythu table td {
+    font-size: 16px;
+}
+.bg_ef {
+    background: #efefef!important;
+    padding: 10px 5px;
+}
+.colgiai td div {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.colgiai .g8 div, .colgiai .gdb div {
+    color: #ed0303;
+    font-size: x-large;
+}
+.box-html .p_gach{
+    width: 70%;
+    margin:auto;
+    border-top:1px solid #d7d7d7;
+    margin-top:10px;
+}
+.box-html{
+    margin-top: 20px;
+}
+.box-html p{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+.opt-quay-thu{
+    text-align: center;
+    margin-top: 15px;
+    color: #0066cc;
+    font-weight: bold;
+}
+.spanleft{
+    padding-right: 20px;
+}
+.list-unstyle, .list-unstyle li{
+    list-style: none;
+}
+.province_name{
+    color:#1788ce;
+    height: 26px;
+    margin-right: 20px;
+    width: 100px;
+}
+.clearfix{
+    display: table;
+    margin: auto;
+}
+.bt-red{
+    background: #5cb85c;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    padding: 4px 10px;
+}
+.list-unstyle{
+    margin-top: 20px;
+}
+.title strong{
+    font-size: 30px;
+    color: #fc0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 15px;
+}
+.txt-giai{
+    width: 30%;
+}
+.div_tk{
+    margin:20px 0px;
+}
+.table_tk{
+    border: 1px solid #e4e4e4;
+}
+.left,.left1{
+    width: 30%;
+}
+
+.right1,.right{
+    width: 70%;
+}
+.left,.right{
+    background: #f0ad4e;
+    color: #000;
+    font-weight: bold;
+}
+.left1,.right1{
+    padding: 2px !important;
+    color: #000;
+    font-weight: bold;
+}
+.right1{
+    text-align: left!important;
+    padding-left: 10px !important;
+}
+.left1{
+    font-weight: bold;
+    color: #eb0000;
+}
+.right2{
+    text-align: right !important;
+    padding-right: 10px !important;
+}
+.colgiai tr th {
+    vertical-align: middle;
+    color: #fff;
+    padding: 8px 0;
+    background: #5cb85c;
+    text-align: center;
+    font-weight: bold;
+}
+.text{
+    display: none;
+}
+.show-sub-menu:hover{
+    cursor: pointer;
+}
+/*END QUAY THU*/
+
+.sub-menu li a:hover{
+    color:#f6ff00;
+}
+.sub-menu li{
+    border-top: 1px solid #444 !important;
+    width: 100%;
+}
+.a_title_sm{
+    color:#fc0000 !important;
+}
+.img_home{
+    width: 20px;
+}
+.txtmb{
+    font-size: 20px;
+    font-weight: bold;
+    color: #068a2a;
+    text-align: center;
+    margin-bottom:20px;
+}
+.table_loto td{
+    vertical-align: middle !important;
+}
+.right1 span{
+    display: none;
+}
+.adv_text_top a{
+    text-decoration: underline;
+}
+.adv_text_top{
+    border-bottom: 1px solid #ECECEC;
+    border-top:none !important;
+}
+.adv_text_top0{
+    border-top: 1px solid #ECECEC  !important;
+}
+#soi-cau{
+    margin-top: 20px;
+}
+.delete-message_hidden{
+    display: none;
+}
+
+/*Thong ke loto online*/
+.h3_thongke{
+    overflow: hidden;
+}
+
+.div_select {
+    margin-left: 10px;
+    float:left;
+}
+#select_date {
+    color: #ff4200;
+}
+.h3_thongke span{
+    float:left;
+    padding-top: 4px;
+}
+.left_loto{
+    float:left;
+    width: 60% !important;
+}
+.right_loto{
+    float:left;
+    width: 35% !important;
+    text-align: right;
+    margin-top: 0px !important;
+}
+.right_loto .time-chat{
+    position: initial !important;
+    color:#8f8f8f;
+}
+.p_logo{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+.p_logo span{
+    color: red !important;
+}
+#div_loto_online{
+    max-height: 463px;
+    overflow: auto;
+}
+.hr_loto{
+    margin: 0px !important;
+}
+.row_loto0{
+    background: #f8f8f8;
+
+}
+.row_loto .name h4{
+    margin-top: 16px;
+}
+.row_loto  .name {
+    padding-left: 2px !important;
+}
+.row_loto{
+    border-top:1px solid #e1e1e1;
+}
+.row_loto .row{
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.row_loto .point-loto {
+
+    top: 26px !important;
+}
+
+.h4_title_tk{
+    text-transform: uppercase;
+    padding: 0 15px;
+    height: 33px;
+    line-height: 33px;
+    background: #cc6600;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size:16px
+}
+@media screen and (max-width: 500px) {
+
+    .right_loto,.left_loto{
+        width: 50%!important;
+        margin-top: 2px !important;
+
+    }
+    .row_loto {
+        /* height: 56px !important; */
+    }
+    .row_loto .row{
+        margin: 0px !important;
+        padding: 3px 5px;
+        margin-top: 0px !important;
+        height: 57px;
+    }
+
+    .row_loto .user-info {
+        height: 56px !important;
+    }
+    #div_loto_online{
+        max-height: 291px !important;
+    }
+    .div_thongke{
+        max-height: 300px;
+        overflow: auto;
+    }
+    .row_loto .row .name h4 {
+        font-size: 16px !important;
+    }
+}
+#ul_baiviet{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+}
+#ul_baiviet li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#ul_baiviet li img{
+    width: 35px;
+}
+/*END Thong ke loto online*/
+
+.divbs{
+    text-align: center;
+}
+.grecaptcha-badge{display: none}
+.li_menu_sub{
+    position: relative;
+}
+.li_menu_sub .sub-menu{
+    left: 0px !important;
+}
+#site section .header{
+    text-align: center;
+}
+.pagination a:hover{
+    cursor: pointer;
+}
+
+
+

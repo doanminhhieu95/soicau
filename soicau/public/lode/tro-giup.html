@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" dir="ltr" lang="en-US" ><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US"><!--<![endif]-->
+<head>
+
+<title>Hướng Dẫn Đánh Đề</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="Hướng Dẫn Đánh Đề" />
+<meta name="description" content="Hướng dẫn" />
+<meta name="keywords" content="Hướng dẫn" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="stylesheet" href="public/site/css/css.css" type="text/css" />
+
+<script type="text/javascript">
+		var site_url = '/';
+		var base_url = '/';
+		var public_url = '/public';
+	</script>
+<link rel="icon" href="/public/site/layout/images/icon.png" type="/public/site/layout/image/vnd.microsoft.icon">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700&subset=vietnamese' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,300,300italic&subset=vietnamese' rel='stylesheet' type='text/css' />
+<link href="public/min/begin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="public/min/begin.js"></script>
+<script type="text/javascript">
+      $(function() {
+         $(".slide_show").colorbox({rel:'slide_show', slideshow:true});
+      });
+    </script>
+<script type="text/javascript">
+    function time() {
+       var today = new Date();
+       var weekday=new Array(7);
+       weekday[0]="Chủ nhật";
+       weekday[1]="Thứ 2";
+       weekday[2]="Thứ 3";
+       weekday[3]="Thứ 4";
+       weekday[4]="Thứ 5";
+       weekday[5]="Thứ 6";
+       weekday[6]="Thứ 7";
+       var day = weekday[today.getDay()]; 
+       var dd = today.getDate();
+       var mm = today.getMonth()+1; //January is 0!
+       var yyyy = today.getFullYear();
+       var h=today.getHours();
+       var m=today.getMinutes();
+       var s=today.getSeconds();
+       m=checkTime(m);
+       s=checkTime(s);
+       nowTime = h+":"+m+":"+s;
+       if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = day+', '+ dd+'/'+mm+'/'+yyyy;
+    
+       tmp= today+' | '+nowTime;
+    
+       document.getElementById("time_view").innerHTML=tmp;
+    
+       clocktime=setTimeout("time()","1000","JavaScript");
+       function checkTime(i)
+       {
+          if(i<10){
+    	 i="0" + i;
+          }
+          return i;
+       }
+    }
+</script>
+<script type="text/javascript">
+	   $(document).ready(function () {
+	      $(".datepicker" ).datetimepicker({scrollMonth:false,scrollInput:false,lang:"vi",format: 'd-m-Y',timepicker:false,changeYear:true, changeMonth:true, yearStart:'2018',yearEnd:'2019',maxDate: new Date() });
+	      $(".datepicker1" ).datetimepicker({scrollMonth:false,scrollInput:false,lang:"vi",format: 'd-m-Y',timepicker:false,changeYear:true, changeMonth:true, yearStart:'2018',yearEnd:'2019',minDate: new Date() });
+	      $(".datepicker2" ).datetimepicker({scrollMonth:false,scrollInput:false,lang:"vi",format: 'd-m-Y',timepicker:false, yearStart:'1930',yearEnd:'2010' ,maxDate: new Date()});
+          //tao dong ho
+		  time();
+	   });  
+	</script> </head>
+<body>
+<div class="wrapper">
+<div class="header">
+<div class="logo">
+<a href="/">
+<img src="public/site/layout/images/logo.png">
+</a>
+</div>
+<div class="login col-xs-7" style="display: block;height:80px;" id="form_login">
+<form class="form_action" action="/login.html" method="post">
+<div class="row">
+<div style="padding-right:0;" class="col-xs-4">
+<input type="text" placeholder="Email" name="email" class="form-control txt-red" id="form_customer_log_email">
+</div>
+<div style="padding-right:0;" class="col-xs-3">
+<input type="password" placeholder="Mật khẩu" name="password" class="form-control txt-red" id="form_customer_log_password">
+</div>
+<div style="padding-right:0;" class="col-xs-3">
+<input type="submit" value="Đăng nhập" class="btn btn-signin form-control">
+</div>
+<div style="padding-right:0;" class="col-xs-2">
+<input type="button" onclick="Dialog.show('#dangky');return false;" value="Đăng ký" onclick="window.location='/user/register.html'" class="btn btn-signout form-control">
+</div>
+<div>
+<div class="clear "></div>
+<div class="message-box error m0 f13 hideit none" style="color:red;display:none;background:none;border:none;padding:0px 15px" name="login_error"></div>
+<div class="clear "></div>
+</div>
+</div>
+<div class="message-box error m0 f13 hideit hide" style="color:#444;" name="login_error"></div>
+</form>
+<div class="txt-link reset-pwd"><a href="/forgot.html">Quên mật khẩu?</a></div>
+</div>
+<div class="clearfix"></div>
+<div class="menu">
+<ul>
+<li class="mn-home active"><a href="/">&nbsp;</a></li>
+<li class="">
+<a href="/lo-de-mien-bac.html">Lô đề Miền Bắc</a>
+</li>
+<li class="">
+<a href="/lo-de-mien-trung.html">Lô đề Miền Trung</a>
+</li>
+<li class="">
+<a href="/lo-de-mien-nam.html">Lô đề Miền Nam</a>
+</li>
+</ul>
+<div class="bank" id="btn-bank-info-show">
+<span class="icon-bank"></span>
+<span class="bank-txt">Tài khoản ngân hàng</span>
+</div>
+<div class="info-bank" style="display: none;">
+</div>
+<div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(){
+        $(document).click(function(){
+            $(".info-bank").hide();
+            
+        });
+        $("#btn-bank-info-show").click(function(event){$(".info-bank").show();event.stopPropagation();});
+    });
+    
+    </script>
+</div>
+<div class="notification">
+<div class="notification-head">
+<span class="notification-icon"></span>
+</div>
+<div class="notification-text">
+<marquee behavior="scroll" direction="left">
+<span id="div_thongbao">Cam kết an toàn trên mỗi giao dịch với ghi chú buôn bán tiền ảo hợp pháp</span>
+</marquee>
+</div>
+<div class="date-time">
+<span id="time_view"></span>
+</div>
+<div class="clearfix"></div> </div>
+<div class="main">
+<div class="main page-lode">
+<div class="tro-giup">
+<div class="left">
+<div class="title">Trợ giúp</div>
+<div>
+<ul class="menu-help" id="ul_help">
+<li id="gioithieu" class="act"><a id="gioithieu1" href="/tro-giup/11.html">Hướng Dẫn Đánh Đề</a></li>
+<li id="gioithieu" class=""><a id="gioithieu1" href="/tro-giup/4.html">Cách nạp tiền thủ công</a></li>
+<li id="gioithieu" class=""><a id="gioithieu1" href="/tro-giup/12.html">Cách nạp tiền siêu tốc</a></li>
+<li id="gioithieu" class=""><a id="gioithieu1" href="/tro-giup/5.html">Cách rút tiền</a></li>
+</ul>
+</div>
+</div>
+<div class="right">
+<div class="title" id="div_trogiup_title">Hướng Dẫn Đánh Đề</div>
+<div id="div_trogiup_detail" style="margin-top: 10px;"><p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">I. Để tham gia&nbsp;chơi l&ocirc; đề, số đề th&igrave; trước ti&ecirc;n&nbsp;bạn đăng k&yacute; t&agrave;i khoản tr&ecirc;n trang lode88.net</span></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="Description: dk.png" src="ldimages/hd1.png" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: middle; height: 65px; width: 458px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">II. Sau khi đăng k&yacute; xong bạn tiến h&agrave;nh Nạp tiền</span></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+Để tiện lợi cho việc gửi tiền v&agrave;o chơi l&ocirc; đề th&igrave; Lode88 c&oacute; hỗ trợ đủ c&aacute;c ng&acirc;n h&agrave;ng th&ocirc;ng dụng nhất hiện nay: Vietcombank, Đ&ocirc;ng &Aacute;, ACB, VietinBank, BIDV, Sacombank,Techcombank.</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+Khi gửi tiền xong th&igrave; bạn vui l&ograve;ng lập lệnh Nạp tiền. Khi nhận được tiền th&igrave; bộ phận hỗ trợ của Lode88 sẽ cập nhật tiền v&agrave;o t&agrave;i khoản l&ocirc; đề cho bạn. (<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;"><a href="/tro-giup/4.html">Xem hướng dẫn Nạp Tiền</a>)</span></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">III. C&aacute;ch Đ&aacute;nh Số Đề</span></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">&nbsp;1.&nbsp;</span>Sau khi c&oacute; tiền trong t&agrave;i khoản th&igrave; ở giao diện trang chủ, bạn chọn l&ocirc; đề m&igrave;nh cần đ&aacute;nh: L&ocirc; đề Miền Bắc, L&ocirc; đề Miền Trung, L&ocirc; đề Miền Nam.</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="Description: chon dai.png" src="ldimages/hd2.png" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: middle; height: 104px; width: 470px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">2</span>. Như tr&ecirc;n l&agrave; đ&atilde; chọn đ&aacute;nh l&ocirc; đề Miền Nam. Trong một ng&agrave;y th&igrave; l&ocirc; đề Miền Nam c&oacute; nhiều đ&agrave;i, bạn chọn đ&agrave;i cần đ&aacute;nh.</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="" src="https://imgur.com/5pUaMIz.jpg" style="width: 700px; height: 354px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">3.</span>&nbsp;Tiếp đến bạn chọn dạng l&ocirc; đề cần đ&aacute;nh c&aacute;c con số đề y&ecirc;u th&iacute;ch.</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="" src="https://imgur.com/AYjJ34q.jpg" style="width: 700px; height: 246px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">4</span>. Sau khi chọn kiểu đ&aacute;nh v&agrave; con số ưa th&iacute;ch rồi th&igrave; bạn điền số tiền cần đ&aacute;nh v&agrave; bấm <strong>X&aacute;c Nhận</strong></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="" src="https://imgur.com/tD3jLp8.jpg" style="width: 700px; height: 521px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+5. Khi bấm X&aacute;c Nhận, hệ thống hỏi &quot; Bạn c&oacute; chắc chắn muốn đ&aacute;nh kh&ocirc;ng?&quot; , kiểm tra thấy con số m&igrave;nh chọn v&agrave; số tiền đ&atilde; đ&uacute;ng rồi th&igrave; bạn bấm <strong>OK</strong>, nếu kh&ocirc;ng đ&uacute;ng bạn bấm <strong>Hủy </strong>v&agrave; chọn lại.</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<img alt="" src="https://imgur.com/kO2wNRU.jpg" style="width: 700px; height: 532px;" /></p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+- Đối với Bao L&ocirc; 2 số của l&ocirc; đề Miền Nam th&igrave; bạn chỉ cần thanh to&aacute;n 15 giải tr&ecirc;n tổng 18 giải. Thắng gấp 79 lần, nếu số đ&oacute; về N lần th&igrave; tiền thắng được xN lần. Như v&iacute; dụ tr&ecirc;n t&ocirc;i đ&aacute;nh 990k, bao l&ocirc; 2 số đ&agrave;i Long An, nếu kết quả xổ số 18 giải của đ&agrave;i Long An c&oacute; ra số đu&ocirc;i l&agrave; 88 th&igrave; t&ocirc;i thắng được&nbsp; 5,214K ( 5 triệu 214 ng&agrave;n). Nếu ra 2 lần th&igrave; số tiền được x2, tức l&agrave;: &nbsp;5,214k x 2= 10,428k</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+- Tương tự bạn c&oacute; thể chọn đ&aacute;nh l&ocirc; đề miền trung, l&ocirc; đề miền bắc v&agrave; chọn những con số đề y&ecirc;u th&iacute;ch một c&aacute;ch dễ d&agrave;ng. Ch&uacute;c c&aacute;c bạn tham gia chơi l&ocirc; đề, số đề nhiều may mắn v&agrave; thắng lớn!</p>
+<p font-size:="" helvetica="" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; color: rgb(51, 51, 51);">
+<strong>Xem th&ecirc;m:</strong>&nbsp;<u><strong><a href="/kinh-nghiem.html">Kinh nghiệm chơi l&ocirc; đề - s&ocirc; đề chắc thắng 95%</a></strong></u></p>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<a class="footer_icon" href="/thong-tin/tu-gioi-thieu/i1.html" title="Trách nhiệm">
+<i class="icon-gioithieu"></i>
+<p>
+Tự giới thiệu
+</p>
+</a>
+<a class="footer_icon" href="/thong-tin/trach-nhiem/i2.html" title="Trách nhiệm">
+<i class="icon-trachnhiem"></i>
+<p>
+Trách nhiệm
+</p>
+</a>
+<div class="footer_icon">
+<a href="/tro-giup.html" title="Trợ giúp">
+<i class="icon-trogiup"></i>
+<p>Trợ giúp</p>
+</a>
+</div>
+<div class="footer_icon" onclick="Dialog.show('#contact');">
+<i class="icon-lienhe"></i>
+<p>Liên hệ</p>
+</div>
+<div id="contact" style="display: none; ">
+<div class="dialog" style="width:600px;">
+<div class="dialog-title">
+Liên hệ</div>
+<div class="close b-close">
+×</div>
+<div class="dialog-content">
+<div class="contact contact-phone">
+<span><a style="color:#fff;" href="tel:0979498888" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);">0979.49.8888</a></span>
+</div>
+
+<div class="contact contact-zalo">
+<span><a href="http://secure.livechatinc.com/licence/6335071/open_chat.cgi" class="popup2">Live Chat</a></span>
+</div>
+
+<div class="contact contact-skype">
+<span><a style="color:#fff;" href="skype:lode88.com?chat">lode88.com</a></span>
+</div>
+<div class="contact contact-viber">
+<span>0979.49.8888</span>
+</div>
+<div class="contact contact-mail">
+<span><a style="color:#fff;font-size:11px;" href="/cdn-cgi/l/email-protection#8ee2e1eaebb6b6a0ede1e3cee9e3efe7e2a0ede1e3"><span class="__cf_email__" data-cfemail="a5c9cac1c09d9d8bc6cac8e5c2c8c4ccc98bc6cac8">[email&#160;protected]</span></a></span>
+</div>
+<div class="contact contact-wechat">
+<span>0979.49.8888</span>
+</div>
+<div class="clearfix">
+</div>
+</div>
+</div>
+</div>
+<div class="footer_icon ft-contact" style="width: 210px;">
+<div style="margin-top: 32px;">
+<a href="http://secure.livechatinc.com/licence/6335071/open_chat.cgi" class="popup2">
+<img src="public/site/layout/images/logo_livechat.png" />
+</a>
+
+<a href="viber://0979498888"><img src="public/site/layout/images/icon_viber.png" /></a>
+</div>
+</div>
+<div class="hotline"><a style="color:#fff;" href="tel:0979498888" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);">0979.49.8888</a></div>
+<div class="support"></div>
+</div>
+<div style="text-align:center;color:#354b60;font-size:10px;height:12px;">
+<p>
+Lô đề online - Đánh đề trực tuyến - Đánh lô số đề trên mạng - Chơi lô đề - Soi cầu lô đề miền bắc - Tỷ lệ lô đề - Hướng dẫn - Dự đoán kết quả lô đề - Thống kê kết quả lô đề - <u><strong><a href="/kinh-nghiem.html">Kinh nghiệm đánh lô đề, số đề</a></strong></u><br />
+ </p></div>
+<div id="divAdRight" style="display: block; position: fixed; top: 20px;">
+<a href="#"><img src="public/site/layout/images/banner_phai.png" width="170" /></a>
+</div>
+<div id="divAdLeft" style="display: block; position: fixed; top: 20px;">
+<a href="#"><img src="public/site/layout/images/banner_trai.png" width="170" /></a>
+</div>
+<div id="dangky" style="display: none;">
+<div class="dialog">
+<div class="dialog-title">Đăng ký</div>
+<div class="close b-close">×</div>
+<div class="dialog-content">
+<form id="frm-register-user" autocomplete="off">
+<input name="email" onblur="" style="width: 95%;" class="input-dk email" autocomplete="off" placeholder="Email của bạn">
+<label id="fomr_customer_inform"></label>
+
+<input name="password" style="width: 95%;" class="input-dk mk txt-regis-password" type="password" autocomplete="off" placeholder="Mật khẩu">
+<input name="password_repeat" style="width: 95%;" class="input-dk mk2" type="password" autocomplete="off" placeholder="Nhập lại mật khẩu">
+<input name="phone" style="width: 95%;" class="input-dk phone" autocomplete="off" placeholder="Số điện thoại">
+<label>* Điền đúng số điện thoại để có thể rút tiền.</label>
+<input type="hidden" name="_submit" value="2" />
+<input onclick="saveRecordRegistry();" type="submit" value="Đăng ký" class="btn-input">
+<div class="clearfix"></div>
+</form>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script>
+    $("#frm-register-user").submit(function(){
+            $.ajax({url: '/user/register.html',
+                dataType:"json",
+                method:"POST",
+                cache:false,
+                data:"action=login&"+$("#frm-register-user").serialize(),
+                success: function(data){
+                    if(!data.complete){
+                        var error_string="Lỗi khi đăng ký:\n";
+                        for(var k in data){
+                            if(data[k].length>0)
+                            error_string+=$(data[k]).text()+"\n";
+                        }
+                        alert(error_string);
+                    }else{
+                        Dialog.close("#dangky");
+                        alert("Bạn đã đăng ký thành công");
+                        window.location.reload();
+                    }
+            }});
+        return false;
+    });
+
+</script>
+<script>
+        function FloatTopDiv()
+        {
+            startLX = ((document.body.clientWidth - MainContentW) / 2) - LeftBannerW - LeftAdjust, startLY = TopAdjust + 80;
+            startRX = ((document.body.clientWidth - MainContentW) / 2) + MainContentW + RightAdjust, startRY = TopAdjust + 80;
+            var d = document;
+            function ml(id)
+            {
+                var el = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                el.sP = function (x, y) {
+                    this.style.left = x + 'px';
+                    this.style.top = y + 'px';
+                };
+                el.x = startRX;
+                el.y = startRY;
+                return el;
+            }
+            function m2(id)
+            {
+                var e2 = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                e2.sP = function (x, y) {
+                    this.style.left = x + 'px';
+                    this.style.top = y + 'px';
+                };
+                e2.x = startLX;
+                e2.y = startLY;
+                return e2;
+            }
+            window.stayTopLeft = function ()
+            {
+                if (document.documentElement && document.documentElement.scrollTop)
+                    var pY = document.documentElement;
+                else if (document.body)
+                    var pY = document.body;
+                if (document.body.scrollTop > 30) {
+                    startLY = 3;
+                    startRY = 3;
+                } else {
+                    startLY = TopAdjust;
+                    startRY = TopAdjust;
+                }
+                ;
+                ftlObj.y += (pY + startRY - ftlObj.y) / 16;
+                ftlObj.sP(ftlObj.x, ftlObj.y);
+                ftlObj2.y += (pY + startLY - ftlObj2.y) / 16;
+                ftlObj2.sP(ftlObj2.x, ftlObj2.y);
+                setTimeout("stayTopLeft()", 1);
+            }
+            ftlObj = ml("divAdRight");
+            //stayTopLeft();
+            ftlObj2 = m2("divAdLeft");
+            stayTopLeft();
+        }
+        function ShowAdDiv()
+        {
+            var objAdDivRight = document.getElementById("divAdRight");
+            var objAdDivLeft = document.getElementById("divAdLeft");
+            if (document.body.clientWidth < 1000)
+            {
+                objAdDivRight.style.display = "none";
+                objAdDivLeft.style.display = "none";
+            }
+            else
+            {
+                objAdDivRight.style.display = "block";
+                objAdDivLeft.style.display = "block";
+                FloatTopDiv();
+            }
+        }
+    </script>
+<script>
+        document.write("<script type='text/javascript' language='javascript'>MainContentW = 980;LeftBannerW = 170;RightBannerW = 170;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 10;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");
+    </script>
+<script type="text/javascript">
+                function DropDown(el) {
+                    this.dd = el;
+                    this.placeholder = this.dd.children('span');
+                    this.opts = this.dd.find('ul.dropdown > li');
+                    this.val = '';
+                    this.index = -1;
+                    this.initEvents();
+                }
+                DropDown.prototype = {
+                    initEvents: function () {
+                        var obj = this;
+
+                        obj.dd.on('click', function (event) {
+                            $(this).toggleClass('active', '', 100);
+                            return false;
+                        });
+
+                        obj.opts.on('click', function () {
+                            var opt = $(this);
+                            obj.val = opt.text();
+                            obj.index = opt.index();
+                            obj.placeholder.text(obj.val);
+                        });
+                    },
+                    getValue: function () {
+                        return this.val;
+                    },
+                    getIndex: function () {
+                        return this.index;
+                    }
+                }
+
+                $(function () {
+
+                    var dd = new DropDown($('#dd'));
+                    var dd = new DropDown($('#dd1'));
+                    var dd = new DropDown($('#dd2'));
+                    var dd = new DropDown($('#dd3'));
+
+                    $(document).click(function () {
+                        // all dropdowns
+                        $('.wrapper-dropdown-3').removeClass('active');
+                    });
+
+                });
+
+
+                $('.banner-slider').bxSlider({
+                    pager: false,
+                    mode: 'fade',
+                    pause: 5000,
+                    auto: true,
+                    nextSelector: '#slider-next',
+                    prevSelector: '#slider-prev',
+                    nextText: '',
+                    prevText: '',
+                    controls: false
+                });
+				
+//
+//                
+//                $(".bank").click(function (event) {
+//                    showBankInfo();
+//                    event.stopPropagation();
+//                });            
+    </script>
+<script type="text/javascript">
+		 var __lc = {};
+__lc.license = 6335071;
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+	</script>
+<script type="text/javascript">
+
+	//initialize the 3 popup css class names - create more if needed
+	var matchClass=['popup1','popup2','popup3'];
+	//Set your 3 basic sizes and other options for the class names above - create more if needed
+	var popup1 = 'width=400,height=300,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+	var popup2 = 'width=800,height=600,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+	var popup3 = 'width=1000,height=750,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=20,top=20';
+	
+	//When the link is clicked, this event handler function is triggered which creates the pop-up windows 
+	function eventHandler() {
+			var x = 0;
+			var popupSpecs;
+			//figure out what popup size, etc to apply to the click
+			while(x < matchClass.length){
+					if((" "+this.className+" ").indexOf(" "+matchClass[x]+" ") > -1){
+						popupSpecs = matchClass[x];
+						var popurl = this.href;
+					}
+			x++;
+			}
+		//Create a "unique" name for the window using a random number
+		var popupName = Math.floor(Math.random()*10000001);
+		//Opens the pop-up window according to the specified specs
+		newwindow=window.open(popurl,popupName,eval(popupSpecs));
+		return false;
+	}
+
+	//Attach the onclick event to all your links that have the specified CSS class names
+	function attachPopup(){
+		var linkElems = document.getElementsByTagName('a'),i;
+		for (i in linkElems){
+			var x = 0;
+			while(x < matchClass.length){
+				if((" "+linkElems[i].className+" ").indexOf(" "+matchClass[x]+" ") > -1){
+					linkElems[i].onclick = eventHandler;
+				}
+			x++;
+			}
+		}
+	}
+	
+	function enterLogin(evt) {
+		if (evt.keyCode == 13) {
+			login();
+		}
+	}
+
+	//Call the function when the page loads
+	window.onload = function (){
+		attachPopup();
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66148450-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="public/site/layout/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"gKoEo1IWx810T3", domain:"lode88.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=gKoEo1IWx810T3" style="display:none" height ="1" width="1" alt="" /></noscript>
+
+</div>
+</body>
+</html>
